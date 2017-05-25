@@ -1,0 +1,24 @@
+#box1 {
+	float: left;
+	width: 700px;
+	height: 1000px;
+	line-height: 40px;
+	color: #609;
+    background-color: #609;
+}
+
+#box2 {
+	float: left;
+	width: 250px;
+	height: 1000px;
+	margin-right: 15px;
+	color: #9f9;
+    background-color: #777;
+}
+#box3 {
+	float: left;
+	width: 200px;
+	height: 1000px;
+	margin-left: 15px;
+    background-color: #222;
+}

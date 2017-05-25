@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	#list1 {
+		list-style: none;
+	}
+
+	#list1 li a {
+		color: #f69;
+		font-size: 2em;
+		text-decoration: none;
+	}
+</style>
+
+<body>
+	<div>
+		<ul id="list1">
+			<li><a href="C:/Users/OEM/Desktop/js/images/new1.jpg" title="coffee" onclick="showpic(this);return false;">new1</a></li>
+			<li><a href="C:/Users/OEM/Desktop/js/images/new2.jpg" title="cat" onclick="showpic(this);return false;">new2</a></li>
+			<li><a href="C:/Users/OEM/Desktop/js/images/new3.jpg" title="dog" onclick="showpic(this);return false;">new3</a></li>
+			<li><a href="C:/Users/OEM/Desktop/js/images/new4.jpg" title="small" onclick="showpic(this);return false;">new4</a></li>
+			<li><a href="C:/Users/OEM/Desktop/js/images/new5.jpg" title="big" onclick="showpic(this);return false;">new5</a></li>
+		</ul>
+	</div>
+	<img id="zhanwei" src="C:/Users/OEM/Desktop/js/images/new7.jpg" style="width: 500px;height: 300px;" alt="my image gallary">
+	<p id="description" style="font-size: 2em;color:#c66;">welcome</p>
+	<script type="text/javascript">
+		function showpic(whichpic) {
+			var source = whichpic.getAttribute("href");
+			var zhanwei = document.getElementById("zhanwei");
+			zhanwei.setAttribute("src", source);
+			var text = whichpic.getAttribute("title");
+			var description = document.getElementById("description");
+			description.innerHTML = text;
+		}
+	</script>
+</body>
+
+</html>

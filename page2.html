@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style>
+		@import url(page2.css);
+	</style>
+</head>
+
+<body>
+	<div id=box2>
+		<br/><br/><br/><br/>
+		<h3>推荐几本书给大家吧！希望大家有所收获！</h3>
+		<hr style="width: 50px">
+		<p style="color:#c36">《JavaScript DOM编程艺术》<br/>（第二版）
+			<br/><br/><br/>《JavaScript 权威指南》
+			<br/><br/><br/>《JavaScript 高级程序设计》<br/>（第三版）
+			<br/><br/><br/>《JavaScript 语言精粹》
+			<br/><br/><br/>《JavaScript 模式》
+			<br/><br/><br/>《HTML5网页开发实例详解》</p>
+	</div>
+	<div id="stair" onclick="show()">
+		<p>导航栏</p>
+	</div>
+	<div id="louti">
+		<ul>
+			<li><a href="#" class="topLink">1F</a></li>
+			<li><a href="#2f" class="topLink">2F</a></li>
+			<li><a href="#3f" class="topLink">3F</a></li>
+			<li><a href="#4f" class="topLink">4F</a></li>
+			<li><a href="#5f" class="topLink">5F</a></li>
+			<li><a href="#box2" class="topLink">top</a></li>
+		</ul>
+	</div>
+	<div id="box1">
+		<div id="floor1">
+			<h1>JavaScript学习笔记</h1>
+			<h2>一、JavaScript简介</h2>
+			<h3>JavaScript 是什么？</h3>
+
+			<p>&nbsp&nbspJavaScript 是一种广泛应用于客户端网页（浏览器）开发的脚本语言，如用来给 HTML 网页添加动态功能，比如响应用户的各种操作等。JavaScript 是一种基于对象(Object)和事件驱动(Event Driven)并具有安全性能的脚本语言，大部分情况下是由网页浏览器来执行的。<br/>				&nbsp&nbspJavaScript 是美国 Sun 公司的注册商标，目前 Javascript 的最新版本为 1.9 版，遵循 Ecma 国际（前身为欧洲计算机制造商协会）的 ECMA-262标准（即ECMAScript），该版本还在不断发展中。
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div id="floor2"><strong>
+JavaScript 特点</strong>
+			<br/>
+			<br/>
+			<strong>脚本编写语言</strong>
+			<br/>
+			<br/> &nbsp&nbspJavaScript 是一种脚本语言，它采用小程序段的方式实现编程。像其它脚本语言一样，JavaScript 是一种解释性语言，在浏览器执行的时候被逐行的翻译。<br/><br/>
+
+			<strong> 基于对象的语言</strong>
+			<br/>
+			<br/> &nbsp&nbspJavaScript 是一种基于对象的语言，同时也可以看作是面向对象的，这意味着它能运用自己已经创建的对象。因此，许多功能可以来自于脚本环境中对象的方法与脚本的相互作用。
+			<br/>
+			<br/>
+		</div>
+		<strong>简单性</strong>
+		<br/>
+		<br/> &nbsp&nbsp要使用了编写 JavaScript 是非常简单的，您无需安装特定的开发环境，只需要一个简单的记事本即可编写 JavaScript 脚本。它具有基本的程序语法和语言结构以及弱数据类型，而这些都是很容易学习和使用的。
+		<br/>
+		<br/>
+		<strong>安全性</strong>
+		<br/>
+		<br/> &nbsp&nbspJavaScript 是一种安全性语言，它不允许访问本地的硬盘，并不能将数据存入到服务器上，不允许对网络文档进行修改和删除，只能通过浏览器实现信息浏览或动态交互，从而有效地防止数据的丢失。
+		<br/>
+		<br/>
+		<strong>动态性</strong>
+		<br/>
+		<br/> &nbsp&nbspJavaScript 是动态的，它可以直接对用户的输入做出响应，无须经过 Web 服务程序。它对用户的反映响应，是采用以事件驱动的方式进行的。所谓事件驱动，是指在网页中执行了某种操作所产生的动作，就称为“事件”(Event)：比如按下鼠标、移动窗口、选择菜单等都可以视为事件。当事件发生后，可能会引起相应的
+		JavaScript 事件响应。
+		<br/>
+		<br/>
+		<strong>跨平台性</strong>
+		<br/>
+		<br/> &nbsp&nbspJavaScript 是由网页浏览器来执行，与操作系统环境无关，只要能运行浏览器的计算机，并支持 JavaScript 的浏览器就可正确执行。
+		<br/>
+		<br/>
+		<strong>JavaScript 和 Java 的区别</strong>
+		<br/>
+		<br/> &nbsp&nbspJavaScript 和 Java 是完全不同的两种语言。Java 由 Sun 公司开发，是更为复杂更强大的语言，并应用于各种场合。
+		</p><br/>
+		<hr style=" height:2px;border:none;border-top:2px solid #185598;" />
+		<div id="2f"></div>
+		<br/>
+		<h2>二、使用JavaScript改变页面中的样式</h2>
+		<p>&nbsp&nbspJavaScript修改页面中的元素和样式，一般都是通过DOM操作来执行的。有关DOM编程的详细方法和心得在下一模块会有介绍。
+			<br/>
+			<h3>改变页面中的css样式</h3>
+			<br/> &nbsp&nbsp通过DOM操作，我们可以轻松的获取到页面中的每一个元素。常用的方法大致有这几种getElementById、getElementByName、getElementByTagName、getElementByClassName(详细使用方法请参考《JavaScript
+			DOM编程艺术》)。通过以上这些操作，我们就可以轻松的获取到页面的每一个元素了。
+			<br/><br/>&nbsp&nbsp下面我们举一个非常简单的小例子，比如我们现在想要操作页面中的一个块，也就是一个div。如下，我们创建一个div，&ltdiv id = "demo"&gt，给这个div一个id = "demo"，这样，我们就可以使用getElementById的方法来获取这个div了。document.getElementById("#demo");这样我们就成功获取到了这个div，接下来我们就可以执行对这个块的操作了，比如我们想要将它隐藏。就可以这样做。document.getElementById("#demo").style.display
+			= "none";这样我们就成功的将这个块隐藏起来了。不过在实际中我们不建议这样做，因为这样的代码太长，在实际编写过程中我们是不会这样的，我们通常会将获取到的元素赋值给一个变量，这样既显得简洁而且还便于之后对这个元素进行的其他操作<br/>			var demo = document.getElementById("#demo");<br/> demo.style.display = "none";
+			<br/> &nbsp&nbsp这样代码是不是显得又漂亮又整洁了呢。我们以一个简单的隐藏为例，只是简单的介绍一下JavaScript的强大功能中的一点皮毛。JavaScript更强大的功能还在后面。
+		</p><br/>
+		<hr style=" height:2px;border:none;border-top:2px solid #185598;" /><br/>
+		<div id="3f"></div>
+		<h2>三、JavaSeript DOM编程介绍</h2>
+		<p>&nbsp&nbsp首先，我们来简单的了解一下DOM。DOM（document object model）文档对象模型<br/>HTML DOM 是一个W3C标准，它是HTML的文本对象模型(Document Object Model for
+			HTML)的缩写。
+			<br/> HTM LDOM 定义了一套HTML的标准对象，以及对HTML文本对象访问和操作的标准方法。<br/> 所有HTML 元素，连同它们包含的文本和属性，都可以通过DOM来访问。其内容可以被修改或删除，并可以生成新的元素。<br/>			HTML DOM 是独立于平台和编程语言的。它可以被任何编程语言所使用，例如Java, JavaScript, 和 VBScript。<br/><br/> &nbsp&nbsp刚开始学习DOM的时候，听大神的推荐读了这本《JavaScript
+			DOM编程艺术》，事实证明这本书真的很好，强烈推荐给所有的初学者。从js简史到js语法再到DOM基础操作到最后的实例。每一章都像是手把手的教一样。给人一种学无不会的感受。下面我来说一下我个人对DOM的理解。
+			<br/> &nbsp&nbspDOM把一份文档表示为一棵“树”（数学上所指的树），这是我们理解和运用这一模型的关键。更具体地说，DOM把一份文档表示为一颗家谱树。家谱树模型非常适合用来表示一份用HTML语言编写出来的文档。如果你能把一个文档的各种元素想象成一颗家谱树，我们就可以用同样的术语描述DOM。不过，与使用“家谱树”这个术语相比，把文档称为“节点树”更准确。
+			<br/> &nbsp&nbsp节点（node）这个词是个网络术语，他表示网络中的一个连接点。一个网络就是由一些节点构成的集合，节点可分为以下几类
+			<br/> 1.元素节点
+			<br/> 2.文本节点
+			<br/> 3.属性节点
+			<br/> 常用的节点属性
+			<br/> nodeType——节点类型，元素节点是1，文本节点是3
+			<br/>nodeValue——节点值，元素节点为空，文本节点的nodeValue属性即为文本内容
+			<br/>firstChild——该元素节点包含的第一个子节点
+			<br/>lastChild——该元素节点包含的最后一个子节点
+			<br/>nextSibling——该节点的后一个兄弟节点
+			<br/>previousSibling——该节点的前一个兄弟节点
+			<br/>childNodes——子节点列表,可以通过node.childNodes[index]（或node.childNodes.item(index)）来获取子节点
+			<br/>nodeName——节点名称，对于元素节点，返回tagName,对于文本，则返回#text
+			<br/><br/> &nbsp&nbsp以上都是对DOM最基础的了解，那么DOM到底对我们的编程有什么用处呢？其实DOM最重要的用处就是获取页面中的元素和改变页面。 说了那么多有关节点的知识，到底节点有什么用呢。没错，DOM获取页面中的元素就是通过节点来获取的。上一章举过的小例子document.getElementById("#demo");就是通过div这个节点获取到了这个块以及这个块下面的所有子节点。
+			<br/><br/></p>
+		<hr style=" height:2px;border:none;border-top:2px solid #185598;" /><br/>
+		<div id="4f"></div>
+		<h2>四、浅谈继承</h2>
+		<p>&nbsp&nbsp首先，第一种JavaScript继承，也就是最经典的继承——原型继承<br/> 我们一起来看一段代码：
+			<p style="line-height: 20px;color: #000;">function Parent () {
+				<br/>this.name = 'kevin';
+				<br/>}
+				<br/>Parent.prototype.getName = function () {
+				<br/>console.log(this.name);
+				<br/>}
+				<br/>function Child () {
+				<br/>}
+				<br/>Child.prototype = new Parent();
+				<br/>var child1 = new Child();
+				<br/>console.log(child1.getName()) // kevin</p>
+		</p>
+		<p>&nbsp&nbsp这就是经典的原型继承，不过这种继承方式有一个很明显的问题：引用类型的属性被所有实例共享，为了方便理解，我们再来看一段代码:</p>
+		<p style="line-height: 20px;color: #000;">function Parent () {
+			<br/> this.names = ['kevin', 'daisy'];
+			<br/>}
+			<br/>function Child () {
+			<br/>}
+			<br/>Child.prototype = new Parent();
+			<br/>var child1 = new Child();
+			<br/>child1.names.push('yayu');
+			<br/>console.log(child1.names); // ["kevin", "daisy", "yayu"]
+			<br/>var child2 = new Child();
+			<br/>console.log(child2.names); // ["kevin", "daisy", "yayu"]</p>
+		<p>&nbsp&nbsp这样问题是不是很明显了，继承之后的child1改变之后，继承父元素的所有子元素全都被影响了。这肯定不是我们想要的结果。很明显这种方式无法对实例进行更改，所以在很多对象很复杂的时候我们不提倡用这种方式进行继承。我们一起来看一下另外一种经典继承——借用构造函数。<br/>			&nbsp&nbsp大家如果对JavaScript有一定了解，想必一定对构造函数不陌生吧。废话少说，我们继续来看一段代码：
+		</p>
+		<p style="line-height: 20px;color: #000;">function Parent () {
+			<br/>this.names = ['kevin', 'daisy'];
+			<br/>}
+			<br/>function Child () {
+			<br/> Parent.call(this);
+			<br/>}
+			<br/>var child1 = new Child();
+			<br/>child1.names.push('yayu');
+			<br/>console.log(child1.names); // ["kevin", "daisy", "yayu"]
+			<br/>var child2 = new Child();
+			<br/>console.log(child2.names); // ["kevin", "daisy"]</p>
+		<p>&nbsp&nbsp我们来对比一下原型继承，刚刚说过原型继承的缺点与不足，就是所有实例共享属性。我们来看一下刚刚这段代码，很明显我们给child1增加了一个‘yayu’，然而child2.names上却没有‘yayu’。很明显我们这次对child1进行的操作并没有影响到child2。也就是说原型继承的缺点被我们解决了。所以这种借用构造函数的继承方法一度成为广泛使用的经典继承方法。但是这个方法就是完美的了吗？答案是否定的。这种方法也有缺点：方法都在构造函数中定义，每次创建实例都会创建一遍方法。所以我们接着往下看。</p>
+		<p>
+			&nbsp&nbsp现在我们接触过了原型继承和构造函数继承。我们来试着把他们结合一下。我们来看下面的代码：<br/></p>
+		<p style="line-height: 20px;color: #000;">
+			<br/>function Parent (name) {
+			<br/>this.name = name;
+			<br/>this.colors = ['red', 'blue', 'green'];
+			<br/>}
+			<br/>Parent.prototype.getName = function () {
+			<br/>console.log(this.name)
+			<br/>}
+			<br/>function Child (name, age) {
+			<br/>Parent.call(this, name);
+			<br/>this.age = age;
+			<br/>}
+			<br/>Child.prototype = new Parent();
+			<br/>var child1 = new Child('kevin', '18');
+			<br/>child1.colors.push('black');
+			<br/>console.log(child1.name); // kevin
+			<br/>console.log(child1.age); // 18
+			<br/>console.log(child1.colors); // ["red", "blue", "green", "black"]
+			<br/>var child2 = new Child('daisy', '20');
+			<br/>console.log(child2.name); // daisy
+			<br/>console.log(child2.age); // 20
+			<br/>console.log(child2.colors); // ["red", "blue", "green"]
+		</p><br/>
+		<p>
+			&nbsp&nbsp通过这段代码，我们可以很轻松的看出，这种方法既没有共享属性，也没有创建很多方法。所以我们可以认为是融合了两种继承方法的优点。所以我们把这种方法叫做组合继承。
+		</p><br/>
+		<hr style=" height:2px;border:none;border-top:2px solid #185598;" /><br/>
+		<div id="5f"></div>
+		<h2>五、浅谈闭包</h2>
+		<p>
+			&nbsp&nbsp闭包在各类文献作品中讲述的都很复杂，我就用一个小例子简单地说一下我心中的闭包。在谈闭包之前，我们不得不讨论一下关于作用域的问题。详细的说是变量作用域。变量作用域无非就是两种：全局变量和局部变量。JavaScript语言的特殊之处就在于函数内部可以直接访问全局变量（详情请参考作用域方面的书籍）。相应的，我们应该了解，在函数的外部我们是无法读取函数内部的局部变量的。举一个小例子：
+			<p style="line-height: 20px;color: #000;">
+				<br/>function f1(){
+				<br/>var n=999;
+				<br/>}
+				<br/>alert(n); // error
+			</p>
+			&nbsp&nbsp很明显输出的结果是error。因为在函数内部定义的变量，在函数执行完成的一瞬间就被销毁了，这也是局部变量的特点之一。但是在很多时候出于种种原因，我们需要得到函数内的局部变量。但是这与我们之前说的相违背。所以我们需要变通一下，那就是在函数内部在定义一个函数。我们来看一下代码：<br/>
+			<p style="line-height: 20px;color: #000;">
+				<br/>function f1(){
+				<br/>n=999;
+				<br/>function f2(){
+				<br/>alert(n); // 999
+				<br/>}
+				<br/>}
+			</p>
+			&nbsp&nbsp我们现在终于实现了访问函数内部的局部变量（有关f2函数能够访问f1函数中的变量的问题请参考作用域链方面知识）。所以接下来我们只要把f2作为返回值，不就可以在外部读取它的内部变量了吗。
+			<p style="line-height: 20px;color: #000;">
+				<br/>function f1(){
+				<br/>n=999;
+				<br/>function f2(){
+				<br/>alert(n);
+				<br/>}
+				<br/>return f2;
+				<br/>}
+				<br/>var result=f1();
+				<br/>result(); // 999
+			</p>
+			&nbsp&nbsp现在我们就实现了在外部访问函数内部的变量了。我们管上面的函数f2就叫做闭包。由于在Javascript语言中，只有函数内部的子函数才能读取局部变量，因此可以把闭包简单理解成“定义在一个函数内部的函数”。 所以，在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。我们现在对闭包应该有了自己的理解了吧。<br/>
+
+		</p>
+	</div>
+	<div id="box3">
+		<br/><br/><br/><br/><br/>
+		<h3>&nbsp&nbsp本人全程手打！！大部分都是原创自己的想法，还有一部分想法是受到书籍和大神博客的启发。希望大家看完有所收获！</h3>
+	</div>
+	<script src="jq/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="JavaScript2.js"></script>
+</body>
+
+</html>

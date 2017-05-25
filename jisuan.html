@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title></title>
+</head>
+
+<style>
+
+table
+{
+	border:3px solid #555;
+	border-collapse: collapse;
+	margin:0 auto;
+	width: 252px;
+	height: 120px;
+	text-align: center;
+	
+}
+.demo{
+	color: white;
+	background-color: #369;
+	width: 100px;
+	height: 28px;
+	cursor: pointer;
+}
+.demo:hover{
+	background-color: #f46;
+}
+#suan
+{
+	width: 300px;
+}
+</style>
+<body>
+<div class="box">
+<table>
+<tr>
+    <td colspan="4"><input type="text" id="suan" value="0" clientidmode="Static"></td>
+</tr>
+<tr>
+	<td><input type="button" class="demo" value="7" onclick="main(this.value)"></td>
+	<td><input type="button" class="demo" value="8" onclick="main(this.value)"></td>
+	<td><input type="button" class="demo" value="9" onclick="main(this.value)"></td>
+	<td><input type="button" class="demo" value="0" onclick="main(this.value)"></td>
+</tr>
+<tr>
+	<td><input type="button" class="demo" value="4" onclick="main(this.value)"></td>
+	<td><input type="button" class="demo" value="5" onclick="main(this.value)"></td>
+	<td><input type="button" class="demo" value="6" onclick="main(this.value)"></td>
+	<td><input type="button" class="demo" value="c" onclick="clear1(this.value)"></td>
+</tr>
+<tr>
+<td><input type="button" class="demo" value="1" onclick="main(this.value)"></td>
+<td><input type="button" class="demo" value="2" onclick="main(this.value)"></td>
+<td><input type="button" class="demo" value="3" onclick="main(this.value)"></td>
+<td><input type="button" class="demo" value="*" onclick="mul()"></td>
+</tr>
+<tr>
+<td><input type="button" class="demo" value="+" onclick="add()"></td>
+<td><input type="button" class="demo" value="-" onclick="jian()"></td>
+<td><input type="button" class="demo" value="/" onclick="divide()"></td>
+<td><input type="button" class="demo" value="=" onclick="result()"></td>
+</tr>
+</table>
+<script type="text/javascript">  
+var num1 = 0;
+var num2 = 0;
+var p = 1;
+var num_string = 0;
+var opvalue = "";
+function clear1(a){		
+        document.getElementById("suan").value="0";
+        num_string = 0;
+}
+function main(a){
+	     num1 = parseInt(parseInt(num_string) + a.toString());
+	     console.log(num1);
+		 num_string = parseInt(num_string) +a.toString();
+		 if(num_string[0] == 0){
+		 	document.getElementById("suan").value = a;
+		 }else{
+		     document.getElementById("suan").value = num_string;}
+}
+
+function mul(){
+	clear1();
+	num_string = 0;
+    num2 = num1;
+    num1 = 0;
+    opvalue = "*";
+}
+function add(){
+	clear1();
+	num_string = 0;
+    num2 = num1;
+    num1 = 0;
+    opvalue = "+";
+}
+function jian(){
+	clear1();
+	num_string = 0;
+    num2 = num1;
+    num1 = 0;
+    opvalue = "-";
+}
+function divide(){
+	clear1();
+	num_string = 0;
+    num2 = num1;
+    num1 = 0;
+    opvalue = "/";
+}
+function result(){
+     if(opvalue == "*"){
+     	document.getElementById("suan").value = num1 * num2;   
+     }
+     if(opvalue == "+"){
+     	document.getElementById("suan").value = num1 + num2;
+     }
+     if(opvalue == "-"){
+     	document.getElementById("suan").value = num2 - num1;
+     }
+     if(opvalue == "/"){
+     	document.getElementById("suan").value = num2 / num1;
+     }   
+}
+</script>
+</div>
+</body>
+</html>

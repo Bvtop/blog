@@ -1,0 +1,88 @@
+#box1 {
+	float: left;
+	width: 700px;
+	height: 1000px;
+	line-height: 40px;
+	color: #609;
+}
+
+#box2 {
+	float: left;
+	width: 250px;
+	height: 1000px;
+	margin-right: 15px;
+	color: #9f9;
+}
+
+#box3 h3 {
+	color: #9f9;
+}
+
+#box3 {
+	float: left;
+	width: 200px;
+	height: 1000px;
+	margin-left: 15px;
+}
+
+#box1 h1 {
+	color: #56a;
+	text-align: center;
+}
+
+#box1 h2 {
+	color: #56a;
+}
+
+#stair {
+	position: fixed;
+	top: 60px;
+	right: 30px;
+	width: 50px;
+	height: 30px;
+	background-color: #3ff;
+	opacity: 1.0;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#stair :hover {
+	opacity: 0.3;
+}
+
+#stair p {
+	text-align: center;
+	line-height: 30px;
+	margin-top: 0px;
+	color: #44f;
+}
+
+#louti {
+	display: none;
+	position: fixed;
+	top: 100px;
+	right: 30px;
+}
+
+#louti ul {
+	list-style: none;
+	width: 50px;
+}
+
+#louti ul li a {
+	display: block;
+	text-decoration: none;
+	line-height: 30px;
+	background-color: #3ff;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+#louti ul li a:hover {
+	background-color: #3cc;
+	color: #fff;
+}
+
+.circle {
+	border-radius: 10px;
+}
