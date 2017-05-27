@@ -1,23 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <meta charset="utf-8">
-    <head>
-        <title></title>
-        <style>
-                @import url(page3.css);
-        </style>
-    </head>
-    <body>
-        <div id = "box2"></div>
-        <div id = "box1">
-            <h1>HTML+CSS学习笔记</h1>
-            <h2>一、HTML标签总结</h2>
-            <p> </p>
+<meta charset="utf-8">
+
+<head>
+    <title></title>
+    <style>
+        @import url(page3.css);
+    </style>
+</head>
+
+<body>
+    <div id="box2"></div>
+    <div id="box1">
+        <h1>HTML+CSS学习笔记</h1>
+        <h2>一、HTML标签总结</h2>
+        <p>&nbsp&nbsp我们先来说一下每一个HTML网页中都必备的HTML标签吧。这些可是网页开发的基础。 大多数HTML标签都由两部分组成：开始标签，表明本标签由文本的哪个地方开始；结束标签，表明标签在哪个地方结束。结束标签以"/"开始，位于
+            <>里面。还有一种标签是空标签，其独特之处在于不需要一对开始标签和结束标签。为保证大家理解每种标签的作用，下面列出了对这三种标签的总结。
+                <br/>&nbsp&nbsp1、开始标签是指明HTML命令开始的HTML标签；命令影响的文本位于开始标签后。 开始标签总是以”
+                <“开始、以”>“结束，如&ltpre> &lthtml>. <br/>&nbsp&nbsp2、结束标签是指明HTML命令结束的HTML标签；命令影响的文本在结束标签之前。 结束标签总是以” &lt/“开始、以 ">"结束，如&lt/html>.
+                    <br/>&nbsp&nbsp3、空标签是在页面中发出的一个HTML命令而不包含任何文本的HTML标签。空标签总是以" &lt "开始、以”/>“结束，如&ltbr/> 在每个HTML页面中都将使用&ltbody>和&lttitle>标签，因为每个网页都需要标题和一些正文。
+                    将&lthtml>放在文档的开头，表明这是一个网页；将&lt/html>放在最后，表明网页已结束。 在网页中有一个标题部分和正文部分，分别由&lthead>和&ltbody>标识。网页标题部分中的消息对页面进行描述，但并不显示在网页浏览器中
+                    。房子啊正文中的信息才被网页浏览器显示。&lthead>标签的位置总是靠近页面的HTML代码的开头，在&lthtml>标签之后。 用于指定页面标题的&lttitle>标签显示在页面的标题部分，也就是说它位于开始标签&lthead>之后、结束标签&lt/head>之前。
+                    <br/>&nbsp&nbsp接下来我们来说一下有关HTML5的事情吧。我们首先要清楚HTML5与HTML4不是取代的关系，而是发展与补充的关系。添加了一些新的标签，同时也 删除了一些过时的标签（用不到或兼容性差）。了解了这些，我们来看一下HTML5到底有什么改变。
+                    <br/>&nbsp&nbsp在这里我就不把所有标签都列举出来了，详情大家可以参考w3school或《html5网页开发》之类的书籍。这里我只举一些常用的新标签。
+                    <br/><br/>section标签<br/> &ltsection>标签，定义文档中的节。比如章节、页眉、页脚或文档中的其它部分。一般用于成节的内容，会在文档流中开始一个新的节。它用来表现普通的文档内容或应用区块，
+                    通常由内容及其标题组成。但section元素标签并非一个普通的容器元素，它表示一段专题性的内容，一般会带有标题。
+                    <br/><br/>article标签 &ltarticle>是一个特殊的section标签，它比section具有更明确的语义，它代表一个独立的、完整的相关内容块，可独立于页面其它内容使用。例如一篇完整的论坛帖子，
+                    一篇博客文章，一个用户评论等等。一般来说，article会有标题部分（通常包含在header内），有时也会包含footer。article可以嵌套，内层的article对外层的article标签有隶属关系。
+                    例如，一篇博客的文章，可以用article显示，然后一些评论可以以article的形式嵌入其中。
+                    <br/><br/>nav标签<br/>nav标签代表页面的一个部分，是一个可以作为页面导航的链接组，其中的导航元素链接到其它页面或者当前页面的其它部分，使html代码在语义化方面更加精确，同时对于屏幕阅读器等设备的支持也更好。
+                    <br/><br/>aside标签<br/>aside标签用来装载非正文的内容，被视为页面里面一个单独的部分。它包含的内容与页面的主要内容是分开的，可以被删除，而不会影响到网页的内容、章节或是页面所要传达的信息。例如广告，成组的链接，侧边栏等等。
+                    <br/><br/>header标签<br/>&ltheader>标签定义文档的页眉，通常是一些引导和导航信息。它不局限于写在网页头部，也可以写在网页内容里面。通常&ltheader>标签至少包含（但不局限于）一个标题标记（&lth1>-&lth6>），还可以包括&lthgroup>标签，还可以包括表格内容、标识、搜索表单、&ltnav>导航等。
+                    <br/><br/>hgroup标签<br/>hgroup标签是对网页或区段section的标题元素（h1-h6）进行组合。例如，在一区段中你有连续的h系列的标签元素，则可以用hgroup将他们括起来
+                    <br/><br/>progres标签<br/>定义任何类型的任务的进度。可以使用&ltprogress>标签来显示javascript中耗费时间的函数的进度（内联元素）
+                    <br/><br/>time标签<br/>定义一个日期/时间	（内联元素）
+                    <br/><br/>audio标签<br/>定义声音内容。(内嵌元素)
+                    <br/><br/>audio标签<br/>元素允许多个 source 元素。source 元素可以链接不同的音频文件。浏览器将使用第一个可识别的格式
+                    <br/><br/>video标签<br/>定义视频。(内嵌元素)<br/><br/>
+                    <hr style=" height:2px;border:none;border-top:2px solid #185598;" /><br/>
+                    <div id = "2f"></div>
+        </p>
+        <h2>二、浅谈CSS样式</h2>
+        <p>
+            &nbsp&nbsp对css的介绍，我就不在一一列举了。例如width、height、color、background之类的属性基础我就不再详细说了。在这里我就简单的说一下如何完成一些页面的布局问题吧。
+            <br/>&nbsp&nbsp还是一样，我们先来说一下css本身。css到底是什么？它要完成我们的什么需求？我们为什么要使用它？其实很简单，提到css我们的第一反应应该改就是样式。换句话说就是美化。没错，css的作用就是用来美化我们的网页的。从本质上来说，css就是为了让页面更美观而存在。
+            <br/>&nbsp&nbsp既然我们都说了，css是美化网页的，那网页又是什么呢？网页不就是上一章说过的HTML构成的吗。那是不是就说明css和HTML是搭配使用的呢，没错，在大多数时候，html和css都是一起出现的。我们也叫做HTML+CSS页面布局。既然是这样，我们下面要研究的就是这两者怎么才能搭配到一起呢？肯定是我们人为的把他们联系到一起吧，我们就来一起看看它们怎么联系到一起。
+            <br/>&nbsp&nbspCSS提供了一个叫作选择器的东西,它的作用就是选择你要美化的标签。选择器有4种基本类型: 标签选择器(tag),通用选择器(*), 类选择器(.class)和ID选择器(#id),4种选择器可混合使用，当然既然这四种是基本类型，那肯定就有高级类型，不过在这里我就不陈述了。大家可以自己查阅。
+            <br/>&nbsp&nbsp接下来我就不绕弯子了，我们直接进入正题。我们一起来做一个布局的小例子，想必大家都浏览过淘宝的主页吧。如果我们只分析我们能看到的部分，不去管那些看不到的部分。主页最上面的一块可以看成是由四个div组成的，一个最上面的导航栏，还有三个div并列排放。我们就来做一下这个简单的例子。
+            <br/>&nbsp&nbsp首先我们要先从最上面的导航栏div做起。这个是最简单的。首先我要先写一个div，把其他的所有div包裹进去。
+            <p style="line-height: 20px;color: #000;">
+                &ltdiv id = "box">&lt/div><strong>这是一个大的盒子。他会把其他盒子包裹起来。</strong>
+                <br/>&ltdiv id = "box1">&lt/div>&nbsp&nbsp<strong>像这样，我们给这个div设置一个id并让它等于box。</strong>
+                <br/>#box1{
+            <br/>width: 100%;
+            <br/>height: 100px;
+            <br/>background-color: #a43;
+        }
+        <br/>&nbsp&nbsp<strong>为了方便观察我给它一个颜色。这样我们就基本完成这个块了，不过看着好像不太一样？没关系我们调整一下。</strong>
+        <br/>margin-left: 35px;
+            <br/>margin-right: 35px;
+            <br/>&nbsp&nbsp<strong>现在看起来舒服一些了吧。</strong>
+            <br/><strong>我们接着来看下面的块，我再写一个div，</strong>&ltdiv id = "box2">&lt/div><strong>我还像之前一样，设置它的宽高和颜色。</strong>
+            <br/>#box2{
+            <br/>width: 200px;
+            <br/>height: 700px;
+            <br/>background-color: #4d4;
+        <br/>}
+        <br/><strong>&nbsp&nbsp恩，看着大体上还不错，还是一样，我们调整一下。也给它一个左边距让它也等于35px。</strong>margin-left: 35px;
+        <br/>&nbsp&nbspOK大功告成，重点来了。如果我们还和之前一样写一个box2会出现我们期望的结果吗？大家可以试一下。这里我就不试了，答案是否定的。如果这样写的话你会发现不管左侧剩多少空间它都会接着往下排列，而不是往右侧排列。这就是问题所在，那我们怎么解决的，很简单我们只需要给这个块一个float属性就可以了。还有一个需要注意的问题就是，并排排列的所有块都要给它设置一个float浮动包括左侧的第一个！
+        <br/>&nbsp&nbsp接下来我们只要需要设置他们的宽和高就OK啦！简单吧！下面是代码。
+        <br/>&ltdiv id = "box">
+    <br/>&ltdiv id = "box1">&lt/div>
+    <br/>&ltdiv id = "box2">&lt/div>
+    <br/>&ltdiv id = "box3">&lt/div>
+    <br/>&ltdiv id = "box4">&lt/div>
+    <br/>&lt/div>
+    <br/>CSS部分：
+    <br/>#box1{
+            <br/>width: 100%;
+            <br/>height: 100px;
+            <br/>background-color: #a43;
+            <br/>margin-left: 35px;
+            <br/>margin-right: 35px;
+        <br/>}
+        <br/>#box2{
+           <br/> width: 200px;
+            <br/>height: 700px;
+            <br/>background-color: #4d4;
+            <br/>margin-left: 35px;
+            <br/>float: left;
+        <br/>}
+        <br/>#box3{
+           <br/> width: 700px;
+           <br/> height: 700px;
+           <br/> background-color: #555;
+            <br/>margin-left: 15px;
+           <br/> float: left;
+       <br/> }
+       <br/> #box4{
+           <br/> width: 200px;
+            <br/>height: 700px;
+           <br/> background-color: #35a;
+           <br/> margin-left: 15px;
+            <br/>float: left;
+       <br/> }
+            </p>
+        </p>
 
 
 
-        </div>
-        <div id = "box3"></div>
+    </div>
+    <div id="box3 "></div>
 
-    </body>
+</body>
+
 </html>

@@ -1,0 +1,35 @@
+#box {
+    width: 310px;
+    height: 193px;
+    margin: 50px;
+    position: relative;
+}
+
+#move {
+    background: url(images/move.png);
+    width: 100px;
+    height: 100px;
+    border: 1px solid #345;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#bigimg {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 350px;
+    display: none;
+    overflow: hidden;
+}
+
+#bigimg img {
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
