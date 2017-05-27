@@ -33,12 +33,12 @@
                     <br/><br/>header标签<br/>&ltheader>标签定义文档的页眉，通常是一些引导和导航信息。它不局限于写在网页头部，也可以写在网页内容里面。通常&ltheader>标签至少包含（但不局限于）一个标题标记（&lth1>-&lth6>），还可以包括&lthgroup>标签，还可以包括表格内容、标识、搜索表单、&ltnav>导航等。
                     <br/><br/>hgroup标签<br/>hgroup标签是对网页或区段section的标题元素（h1-h6）进行组合。例如，在一区段中你有连续的h系列的标签元素，则可以用hgroup将他们括起来
                     <br/><br/>progres标签<br/>定义任何类型的任务的进度。可以使用&ltprogress>标签来显示javascript中耗费时间的函数的进度（内联元素）
-                    <br/><br/>time标签<br/>定义一个日期/时间	（内联元素）
+                    <br/><br/>time标签<br/>定义一个日期/时间 （内联元素）
                     <br/><br/>audio标签<br/>定义声音内容。(内嵌元素)
                     <br/><br/>audio标签<br/>元素允许多个 source 元素。source 元素可以链接不同的音频文件。浏览器将使用第一个可识别的格式
                     <br/><br/>video标签<br/>定义视频。(内嵌元素)<br/><br/>
                     <hr style=" height:2px;border:none;border-top:2px solid #185598;" /><br/>
-                    <div id = "2f"></div>
+                    <div id="2f"></div>
         </p>
         <h2>二、浅谈CSS样式</h2>
         <p>
@@ -52,58 +52,57 @@
                 &ltdiv id = "box">&lt/div><strong>这是一个大的盒子。他会把其他盒子包裹起来。</strong>
                 <br/>&ltdiv id = "box1">&lt/div>&nbsp&nbsp<strong>像这样，我们给这个div设置一个id并让它等于box。</strong>
                 <br/>#box1{
-            <br/>width: 100%;
-            <br/>height: 100px;
-            <br/>background-color: #a43;
-        }
-        <br/>&nbsp&nbsp<strong>为了方便观察我给它一个颜色。这样我们就基本完成这个块了，不过看着好像不太一样？没关系我们调整一下。</strong>
-        <br/>margin-left: 35px;
-            <br/>margin-right: 35px;
-            <br/>&nbsp&nbsp<strong>现在看起来舒服一些了吧。</strong>
-            <br/><strong>我们接着来看下面的块，我再写一个div，</strong>&ltdiv id = "box2">&lt/div><strong>我还像之前一样，设置它的宽高和颜色。</strong>
-            <br/>#box2{
-            <br/>width: 200px;
-            <br/>height: 700px;
-            <br/>background-color: #4d4;
-        <br/>}
-        <br/><strong>&nbsp&nbsp恩，看着大体上还不错，还是一样，我们调整一下。也给它一个左边距让它也等于35px。</strong>margin-left: 35px;
-        <br/>&nbsp&nbspOK大功告成，重点来了。如果我们还和之前一样写一个box2会出现我们期望的结果吗？大家可以试一下。这里我就不试了，答案是否定的。如果这样写的话你会发现不管左侧剩多少空间它都会接着往下排列，而不是往右侧排列。这就是问题所在，那我们怎么解决的，很简单我们只需要给这个块一个float属性就可以了。还有一个需要注意的问题就是，并排排列的所有块都要给它设置一个float浮动包括左侧的第一个！
-        <br/>&nbsp&nbsp接下来我们只要需要设置他们的宽和高就OK啦！简单吧！下面是代码。
-        <br/>&ltdiv id = "box">
-    <br/>&ltdiv id = "box1">&lt/div>
-    <br/>&ltdiv id = "box2">&lt/div>
-    <br/>&ltdiv id = "box3">&lt/div>
-    <br/>&ltdiv id = "box4">&lt/div>
-    <br/>&lt/div>
-    <br/>CSS部分：
-    <br/>#box1{
-            <br/>width: 100%;
-            <br/>height: 100px;
-            <br/>background-color: #a43;
-            <br/>margin-left: 35px;
-            <br/>margin-right: 35px;
-        <br/>}
-        <br/>#box2{
-           <br/> width: 200px;
-            <br/>height: 700px;
-            <br/>background-color: #4d4;
-            <br/>margin-left: 35px;
-            <br/>float: left;
-        <br/>}
-        <br/>#box3{
-           <br/> width: 700px;
-           <br/> height: 700px;
-           <br/> background-color: #555;
-            <br/>margin-left: 15px;
-           <br/> float: left;
-       <br/> }
-       <br/> #box4{
-           <br/> width: 200px;
-            <br/>height: 700px;
-           <br/> background-color: #35a;
-           <br/> margin-left: 15px;
-            <br/>float: left;
-       <br/> }
+                <br/>width: 100%;
+                <br/>height: 100px;
+                <br/>background-color: #a43; }
+                <br/>&nbsp&nbsp<strong>为了方便观察我给它一个颜色。这样我们就基本完成这个块了，不过看着好像不太一样？没关系我们调整一下。</strong>
+                <br/>margin-left: 35px;
+                <br/>margin-right: 35px;
+                <br/>&nbsp&nbsp<strong>现在看起来舒服一些了吧。</strong>
+                <br/><strong>我们接着来看下面的块，我再写一个div，</strong>&ltdiv id = "box2">&lt/div><strong>我还像之前一样，设置它的宽高和颜色。</strong>
+                <br/>#box2{
+                <br/>width: 200px;
+                <br/>height: 700px;
+                <br/>background-color: #4d4;
+                <br/>}
+                <br/><strong>&nbsp&nbsp恩，看着大体上还不错，还是一样，我们调整一下。也给它一个左边距让它也等于35px。</strong>margin-left: 35px;
+                <br/>&nbsp&nbspOK大功告成，重点来了。如果我们还和之前一样写一个box2会出现我们期望的结果吗？大家可以试一下。这里我就不试了，答案是否定的。如果这样写的话你会发现不管左侧剩多少空间它都会接着往下排列，而不是往右侧排列。这就是问题所在，那我们怎么解决的，很简单我们只需要给这个块一个float属性就可以了。还有一个需要注意的问题就是，并排排列的所有块都要给它设置一个float浮动包括左侧的第一个！
+                <br/>&nbsp&nbsp接下来我们只要需要设置他们的宽和高就OK啦！简单吧！下面是代码。
+                <br/>&ltdiv id = "box">
+                <br/>&ltdiv id = "box1">&lt/div>
+                <br/>&ltdiv id = "box2">&lt/div>
+                <br/>&ltdiv id = "box3">&lt/div>
+                <br/>&ltdiv id = "box4">&lt/div>
+                <br/>&lt/div>
+                <br/>CSS部分：
+                <br/>#box1{
+                <br/>width: 100%;
+                <br/>height: 100px;
+                <br/>background-color: #a43;
+                <br/>margin-left: 35px;
+                <br/>margin-right: 35px;
+                <br/>}
+                <br/>#box2{
+                <br/> width: 200px;
+                <br/>height: 700px;
+                <br/>background-color: #4d4;
+                <br/>margin-left: 35px;
+                <br/>float: left;
+                <br/>}
+                <br/>#box3{
+                <br/> width: 700px;
+                <br/> height: 700px;
+                <br/> background-color: #555;
+                <br/>margin-left: 15px;
+                <br/> float: left;
+                <br/> }
+                <br/> #box4{
+                <br/> width: 200px;
+                <br/>height: 700px;
+                <br/> background-color: #35a;
+                <br/> margin-left: 15px;
+                <br/>float: left;
+                <br/> }
             </p>
         </p>
 
