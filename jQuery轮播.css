@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top: -150px;
+	width: 800px;
+	height: 300px;
+	border: 1px solid #06c;
+	overflow: hidden;
+}
+
+.wrapper #turn {
+	position: absolute;
+	top: 50%;
+	margin-top: -25px;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #6ff;
+	opacity: 0.5;
+	cursor: pointer;
+	z-index: 1000;
+}
+
+.wrapper .btn-left {
+	left: 20px;
+}
+
+.wrapper .btn-right {
+	right: 20px;
+}
+
+.wrapper #turn:hover {
+	opacity: 1;
+}
+
+.wrapper .move {
+	position: absolute;
+	top: 50%;
+	margin-top: -90px;
+	width: 250px;
+	height: 180px;
+	float: left;
+	opacity: 0.5;
+}
+
+.wrapper .move img {
+	width: 100%;
+	height: 100%;
+}
